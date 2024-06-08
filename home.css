@@ -8,7 +8,7 @@
 .container {
     width: 100%;
     min-height: 100vh;
-    background-image: linear-gradient(rgba(231, 221, 115, 0.65),rgba(253, 255, 212, 0.65)), url(pics/homeBg.jpg);
+    background-image: linear-gradient(rgba(152, 67, 67, 0.65),rgba(45, 47, 45, 0.65)), url(pics/homeBg.jpg);
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
@@ -27,6 +27,7 @@ nav{
     cursor: pointer;
     text-decoration: none;
     font-size: 25px;
+    color: white;
 }
 
 nav ul {
@@ -42,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -81,5 +82,45 @@ nav ul li a:hover{
     font-weight: 600px;
     line-height: 85px;
     margin-bottom: 25px;
-    color: yellow;
+    color: white;
 }
+
+.content p {
+    margin-bottom: 25px;
+}
+
+.explore-Btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+.explore-Btn:hover{
+    transform: translateX(10px);
+    border: 2px solid(yellow);
+    color: black;
+}
+
+.explore-Btn2 {
+    display: inline-flex;
+    padding: 10px 20px;
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    transition: all .50s ease;
+    cursor: pointer;
+}
+
+

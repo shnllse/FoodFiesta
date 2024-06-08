@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 80px; /* To prevent content from being hidden behind the fixed header */
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: black;
+    z-index: 1; /* Ensure the header stays above other content */
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    overflow: auto; /* Ensure scrollability */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    border-bottom: 2px solid;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.heading h1 {
+    font-size: 50px;
+    color: black;
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: yellow;
+}
+
+.heading p {
+    font-size: 18px;
+    color: #656;
+    margin-bottom: 35px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.about-image {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.2);
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.about-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #656;
+}
+
+.about-content .read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: rgb(255, 250, 250);
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.about-content .read-more:hover {
+    background-color: rgb(183, 183, 51);
+}
+
+.footerNav {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+}
+
+.footerNav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.footerNav ul li {
+    margin: 0 20px;
+}
+
+.footerNav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footerNav ul li a:hover {
+    opacity: 1;
+}
+
+.footerBottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: white;
+    margin: 0;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 0;
+    }
+    nav ul {
+        padding-right: 0;
+    }
+    nav ul li {
+        margin: 10px 10px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-content p {
+        padding: 0;
+        font-size: 16px;
+    }
+    .about-content .read-more {
+        font-size: 16px;
+    }
+}

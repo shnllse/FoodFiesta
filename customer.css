@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: black;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align:center;
+    padding-right: 10px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    padding-right: 0;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    border-bottom: 2px solid;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.reviews {
+    padding: 40px;
+    background: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.reviews p {
+    color: black;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+
+.border {
+    width: 160px;
+    height: 5px;
+    background:yellow;
+    margin: 26px auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.col {
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+.review {
+    background: green;
+    padding: 30px;
+}
+
+.review img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.stars {
+    color: yellow;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 960px){
+    .col{
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+
+    }
+    
+}
+
+@media screen and (max-width: 600px){
+    .col{
+        flex: 100%;
+        max-width: 100%;
+        flex-direction: column;
+        
+    }
+    
+}
+
+

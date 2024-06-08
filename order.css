@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(/pics/homeBg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Header */
+.head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: black;
+    z-index: 1;
+}
+
+.contain {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    border-bottom: 2px solid;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.head-btn {
+    background: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    border-radius: 50px;
+}
+
+/* Wrapper */
+.wrapper {
+    width: 420px;
+    background: rgb(118, 130, 28);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.wrapper .btn {
+    display: inline-block; 
+    padding: 10px 20px; 
+    background: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+    text-decoration: none;
+}
+
+.wrapper .btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.wrapper h1,
+.wrapper h2,
+.wrapper h3 {
+    text-align: center;
+}
+
+.wrapper h1 {
+    margin-bottom: 20px;
+}
+
+.wrapper h2 {
+    margin: 20px 0;
+}
+
+.wrapper h3 {
+    margin: 20px 0 30px;
+}
+
+.wrapper .input-box {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.wrapper img {
+    width: 75px;
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+.input-box input {
+    color: #ffff;
+    padding: 20px 45px 20px 20px;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+}
+
+.input-box input::placeholder {
+    color: white;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: center;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .heading {
+        padding: 0 20px;
+    }
+    .heading h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .container {
+        padding: 0;
+    }
+    nav ul {
+        padding-right: 0;
+    }
+    nav ul li {
+        margin: 10px 10px;
+    }
+    .about {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .about-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .about-content p {
+        padding: 0;
+        font-size: 16px;
+    }
+    .about-content .read-more {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: block;
+    background-color: black;
+    z-index: 1;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo {
+    width: 180px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: yellow;
+    border-bottom: 2px solid;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border: 0;
+    outline: 0;
+    border-radius: 5px;
+    background: yellow;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 50px;
+}
+
+.btn img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.popular {
+    padding: 100px 80px; 
+    margin-top: 80px; 
+    background: #f8f8f8;
+}
+
+.popular .heading {
+    font-size: 48px; 
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.popular .heading span {
+    color: #e74c3c;
+}
+
+.popular .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center; 
+}
+
+.popular .box-container .box {
+    padding: 32px; 
+    background: white;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    text-align: center;
+    flex: 1 1 480px; 
+    max-width: 480px;
+    position: relative;
+}
+
+.popular .box-container .box img {
+    height: 400px; 
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.popular .box-container .box .price {
+    position: absolute;
+    top: 48px; 
+    left: 48px; 
+    background: rgb(166, 159, 16);
+    color: white;
+    font-size: 32px;
+    padding: 16px 32px; 
+    border-radius: 8px; 
+}
+
+.popular .box-container .box h3 {
+    color: rgb(143, 143, 143);
+    font-size: 40px; 
+    padding-top: 32px; 
+}
+
+.popular .box-container .box p {
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    padding-top: 15px; 
+}
+
+.popular .box-container .box .stars {
+    color: gold;
+    font-size: 27px;
+    padding: 16px; 
+}
+
+
+.popular .box-container .box .btn2 {
+    cursor: pointer;
+    display: inline-block;
+    margin-top: 32px; 
+    padding: 16px 48px; 
+    border-radius: 8px; 
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+/*END SECTION OF POPULAR*/
+
+
+/*START SECTION OF APPETIZERS*/
+.appetizer {
+    padding: 100px 80px; 
+    margin-top: 80px;
+    background: #f8f8f8;
+}
+
+.appetizer .heading {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.appetizer .heading span {
+    color: #e74c3c;
+}
+
+.appetizer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center;
+}
+
+.appetizer .box-container .box {
+    padding: 32px; 
+    background: white;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    text-align: center;
+    flex: 1 1 480px; 
+    max-width: 480px;
+    position: relative;
+}
+
+.appetizer .box-container .box img {
+    height: 400px; 
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.appetizer .box-container .box .price {
+    position: absolute;
+    top: 48px; 
+    left: 48px; 
+    background: rgb(166, 159, 16);
+    color: white;
+    font-size: 32px;
+    padding: 16px 32px; 
+    border-radius: 8px; 
+}
+
+.appetizer .box-container .box h3 {
+    color: rgb(143, 143, 143);
+    font-size: 40px; 
+    padding-top: 32px; 
+}
+
+.appetizer .box-container .box p {
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    padding-top: 15px; 
+}
+
+.appetizer .box-container .box .stars {
+    color: gold;
+    font-size: 27px;
+    padding: 16px; 
+}
+
+.appetizer .box-container .box .btn2 {
+    display: inline-block;
+    margin-top: 32px; 
+    padding: 16px 48px; 
+    border-radius: 8px; 
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+/*START SECTION OF MAIN DISH*/
+.mainDish {
+    padding: 100px 80px; 
+    margin-top: 80px; 
+    background: #f8f8f8;
+}
+
+.mainDish .heading {
+    font-size: 48px; 
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.mainDish .heading span {
+    color: #e74c3c;
+}
+
+.mainDish .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center;
+}
+
+.mainDish .box-container .box {
+    padding: 32px; 
+    background: white;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    text-align: center;
+    flex: 1 1 480px; 
+    max-width: 480px;
+    position: relative;
+}
+
+.mainDish .box-container .box img {
+    height: 400px; 
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.mainDish .box-container .box .price {
+    position: absolute;
+    top: 48px; 
+    left: 48px; 
+    background: rgb(166, 159, 16);
+    color: white;
+    font-size: 32px;
+    padding: 16px 32px; 
+    border-radius: 8px; 
+}
+
+.mainDish .box-container .box h3 {
+    color: rgb(143, 143, 143);
+    font-size: 40px; 
+    padding-top: 32px; 
+}
+
+.mainDish .box-container .box p {
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    padding-top: 15px; 
+}
+
+.mainDish .box-container .box .stars {
+    color: gold;
+    font-size: 27px;
+    padding: 16px; 
+}
+
+.mainDish .box-container .box .btn2 {
+    display: inline-block;
+    margin-top: 32px; 
+    padding: 16px 48px; 
+    border-radius: 8px; 
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+/*START SECTION OF DESSERT*/
+.dessert {
+    padding: 100px 80px; 
+    margin-top: 80px;
+    background: #f8f8f8;
+}
+
+.dessert .heading {
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.dessert .heading span {
+    color: #e74c3c;
+}
+
+.dessert .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px; 
+    justify-content: center;
+}
+
+.dessert .box-container .box {
+    padding: 32px; 
+    background: white;
+    box-shadow: 12px 12px rgba(0, 0, 0, 0.1); 
+    border: 1px solid rgba(0, 0, 0, 0.3); 
+    border-radius: 8px; 
+    text-align: center;
+    flex: 1 1 480px; 
+    max-width: 480px;
+    position: relative;
+}
+
+.dessert .box-container .box img {
+    height: 400px; 
+    object-fit: cover;
+    width: 100%;
+    border-radius: 8px; 
+}
+
+.dessert .box-container .box .price {
+    position: absolute;
+    top: 48px; 
+    left: 48px; 
+    background: rgb(166, 159, 16);
+    color: white;
+    font-size: 32px;
+    padding: 16px 32px; 
+    border-radius: 8px; 
+}
+
+.dessert .box-container .box h3 {
+    color: rgb(143, 143, 143);
+    font-size: 40px; 
+    padding-top: 32px; 
+}
+
+.dessert .box-container .box p {
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    padding-top: 15px; 
+}
+
+.dessert .box-container .box .stars {
+    color: gold;
+    font-size: 27px;
+    padding: 16px; 
+}
+
+.dessert .box-container .box .btn2 {
+    display: inline-block;
+    margin-top: 32px; 
+    padding: 16px 48px; 
+    border-radius: 8px; 
+    background: #e74c3c;
+    color: white;
+    text-decoration: none;
+    font-size: 24px; 
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0;
+    }
+    nav ul {
+        padding-right: 0;
+    }
+    nav ul li {
+        margin: 10px 10px;
+    }
+}
+
+
