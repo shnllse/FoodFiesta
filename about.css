@@ -7,7 +7,7 @@
 }
 
 body {
-    padding-top: 80px; /* To prevent content from being hidden behind the fixed header */
+    padding-top: 80px;
 }
 
 .header {
@@ -17,7 +17,7 @@ body {
     height: 80px;
     display: block;
     background-color: black;
-    z-index: 1; /* Ensure the header stays above other content */
+    z-index: 1;
 }
 
 .container {
@@ -26,7 +26,7 @@ body {
     background-size: cover;
     background-position: center;
     padding: 10px 8%;
-    overflow: auto; /* Ensure scrollability */
+    overflow: auto;
 }
 
 nav {
