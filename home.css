@@ -79,7 +79,7 @@ nav ul li a:hover{
 
 .content h1{
     font-size: 70px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 85px;
     margin-bottom: 25px;
     color: white;
@@ -87,11 +87,12 @@ nav ul li a:hover{
 
 .content p {
     margin-bottom: 25px;
+    font-size: 20px;
 }
-
 .explore-Btn {
     display: inline-block;
     padding: 10px 20px;
+    margin-bottom: 25px;
     background-color: yellow;
     color: black;
     font-size: 15px;
@@ -122,5 +123,4 @@ nav ul li a:hover{
     transition: all .50s ease;
     cursor: pointer;
 }
-
 
