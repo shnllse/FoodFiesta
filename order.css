@@ -159,24 +159,7 @@ nav ul li a:hover {
     margin-bottom: 50px;
 }
 
-.input-box input {
-    color: #ffff;
-    padding: 20px 45px 20px 20px;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    border: none;
-    outline: none;
-    border: 2px solid rgba(255, 255, 255, .2);
-    border-radius: 40px;
-    font-size: 16px;
-}
-
-.input-box input::placeholder {
-    color: white;
-}
-
-.input-box i {
+.success i {
     position: absolute;
     right: 20px;
     top: 50%;
@@ -184,28 +167,11 @@ nav ul li a:hover {
     font-size: 20px;
 }
 
-.remember-forgot {
+.processed {
     display: flex;
     justify-content: center;
     font-size: 14.5px;
     margin: -15px 0 15px;
-}
-
-.register-link {
-    font-size: 14.5px;
-    text-align: center;
-    margin: 20px 0 15px;
-}
-
-.register-link p a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-.register-link p a:hover {
-    text-decoration: underline;
-    cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
